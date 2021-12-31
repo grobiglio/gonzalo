@@ -7,13 +7,17 @@ class Categoria:
         """Este método lee el archivo de categorias.txt y asigna el
         contenido del mismo al atrubuto categorias.
         """
-        pass
+        with open('categorias.txt', mode='r') as f:
+            for line in f:
+                self.categorias.append(line.rstrip())
 
     def guardar_en_archivo(self):
         """Este método guarda el contenido del atributo categorias
         en el archivo categorias.txt.
         """
-        pass
+        with open('categorias.txt', 'w') as f:
+            string = '\n'.join(self.categorias)
+            f.write(string)
 
     def agregar_categoria(self):
         nueva_categoria = input("Ingresá la nueva categoría: ")
@@ -25,9 +29,16 @@ class Categoria:
         Previamente verifica que el usuario haya ingresado una opción
         correcta.
         """
-        pass
+        cat_a_eliminar = input("Ingresar categoría a eliminar: ")
+        self.categorias.remove(cat_a_eliminar)
+
+    def listar_categorias(self):
+        for n, cat in enumerate(self.categorias):
+            print(f"{n+1}- {cat}")
+        print("")
 
 categoria_de_libros = Categoria()
+categoria_de_libros.leer_archivo()
 menu = """
 ########## MENU ##########
 --------------------------
@@ -48,7 +59,7 @@ while opcion_escogida != "4":
     elif opcion_escogida == "2":
         categoria_de_libros.eliminar_categoria()
     elif opcion_escogida == "3":
-        print(categoria_de_libros.categorias)
+        categoria_de_libros.listar_categorias()
     else:
         print("Guardando...")
         categoria_de_libros.guardar_en_archivo()

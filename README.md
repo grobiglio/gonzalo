@@ -6,6 +6,14 @@ Desarrollar un programa que sea capaz de gestionar un listado de **categorías d
 Se deberá poner en práctica el concepto de **persistencia de datos** en archivos, permitiendo continuar trabajando si el programa termina y luego lo volvemos a ejecutar.
 Se deberán utilizar clases para definir la estructura de los datos, en este caso, **Categoria**. Los atributos y métodos a utilizar son de libre elección. 
 
+Para ayuda sobre manejo de archivos ver [El método open](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+
+Esta [pregunta en Stackoverflow](https://stackoverflow.com/questions/44901806/python-error-message-io-unsupportedoperation-not-readable) también es de ayuda.
+
+Esta [pregunta en Stackoverflow](https://stackoverflow.com/questions/12453580/how-to-concatenate-items-in-a-list-to-a-single-string) enseña a unir elementos de una lista.
+
+Solamente se encuentra resuelta la Parte 1. La ayuda hasta aquí fue suficiente y útil. En caso de que alguien esté viendo este repositorio y quiera que complete las Partes 2 y 3 por favor solicitarlo al e-mail **grobiglio@gmail.com**.
+
 ## Parte 2
 Desarrollar un programa que sea capaz de gestionar un listado de autores de libros, esto implica poder agregar y eliminar elementos a partir de la interacción con el usuario.
 Se deberá poner en práctica el concepto de persistencia de datos en archivos, permitiendo continuar trabajando si el programa termina y luego lo volvemos a ejecutar.
